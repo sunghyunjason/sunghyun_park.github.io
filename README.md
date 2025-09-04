@@ -1,401 +1,963 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
-<!-- end header -->
-<section class="p-0 position-relative wow animate__fadeIn">
-    <div class="opacity-medium bg-extra-dark-gray z-index-0"></div>
-    <div class="container position-relative">
-        <div class="row">
-            <div class="col-12 d-flex flex-column justify-content-center text-center one-third-screen page-title-large">
-                <!-- start sub title -->
-                <span class="d-block text-white-2 opacity6 margin-10px-bottom alt-font">디지털 케어 네트워크</span>
-                <!-- end sub title -->
-                <!-- start page title -->
-                <h1 class="alt-font text-white-2 font-weight-600 w-55 md-w-80 sm-w-100 mx-auto mb-0">연구소 소개</h1>
-                <!-- end page title -->
-            </div>
-            <div class="down-section text-center"><a href="#overline" class="inner-link"><i class="ti-arrow-down icon-extra-small text-white-2 bg-deep-pink padding-15px-all sm-padding-10px-all rounded-circle"></i></a></div>
-        </div>
-    </div>
-    <div class="swiper-container z-index-minus2 position-absolute top-0 one-third-screen" data-slider-options='{ "loop": true, "effect":"fade", "slidesPerView": "1", "allowTouchMove":true, "autoplay": { "delay": 5000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "pagination": { "el": ".swiper-pagination", "clickable": true } }'>
-        <div class="swiper-wrapper">
-            <!-- start slider item -->
-            <div class="swiper-slide cover-background" style="background-image:url('{% static 'image2/digitalcarenetwork04.jpg' %}');"></div>
-            <!-- end slider item -->
-            <!-- start slider item -->
-            <!-- <div class="swiper-slide cover-background" style="background-image:url('{% static 'image2/digitalcarenetwork19.jpg' %}');"></div> -->
-            <!-- end slider item -->
-            <!-- start slider item -->
-            <div class="swiper-slide cover-background" style="background-image:url('{% static 'image2/digitalcarenetwork20.jpg' %}');"></div>
-            <!-- end slider item -->
-        </div>
-        <!-- <div class="swiper-pagination"></div> -->
-    </div>
-</section>
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- title -->
+        <title>POFO – Creative Agency, Corporate and Portfolio Multi-purpose Template</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <meta name="author" content="ThemeZaa">
+        <!-- description -->
+        <meta name="description" content="POFO is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and portfolio HTML5 template with 25 ready home page demos.">
+        <!-- keywords -->
+        <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
+        <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    </head>
+    <body>   
+        <!-- start header -->
+        <header>
+            <!-- start navigation -->
+            <nav class="navbar navbar-default bootsnav navbar-top header-light background-transparent nav-box-width navbar-expand-lg">
+                <div class="container-fluid nav-header-container">
+                    <!-- start logo -->
+                    <div class="col-auto ps-0">
+                        <a href="index.html" title="Pofo" class="logo"><img src="images/logo.png" data-at2x="images/logo@2x.png" class="logo-dark default" alt="Pofo"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo" class="logo-light"></a>
+                    </div>
+                    <!-- end logo -->
+                    <div class="col accordion-menu pe-0 pe-md-3">
+                        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle-1">
+                            <span class="sr-only">toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-collapse collapse justify-content-end" id="navbar-collapse-toggle-1">
+                            <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal" data-in="animate__fadeIn" data-out="animate__fadeOut">
+                                <!-- start menu item -->
+                                <li class="dropdown megamenu-fw">
+                                    <a href="#">Home</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <!-- start sub menu -->
+                                    <div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full">
+                                        <ul>
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Classic Homepages</li>
+                                                    <li><a href="home-classic-corporate.html">Classic corporate</a></li>
+                                                    <li><a href="home-classic-digital-agency.html">Classic digital agency</a></li>
+                                                    <li><a href="home-classic-innovation-agency.html">Classic innovation agency</a></li>
+                                                    <li><a href="home-classic-web-agency.html">Classic web agency</a></li>
+                                                    <li><a href="home-classic-one-page.html">Classic one page</a></li>
+                                                    <li><a href="home-classic-start-up.html">Classic start-up</a></li>
+                                                    <li><a href="home-classic-interactive-agency.html">Classic interactive agency</a></li>
+                                                    <li class="menu-new"><a href="home-classic-business.html">Classic business</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column -->
+                                            <!-- start sub menu column -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Creative Homepages</li>
+                                                    <li><a href="home-creative-studio.html">Creative studio</a></li>
+                                                    <li><a href="home-creative-business.html">Creative business</a></li>
+                                                    <li><a href="home-creative-simple-portfolio.html">Creative simple portfolio</a></li>
+                                                    <li><a href="home-creative-branding-agency.html">Creative branding agency</a></li>
+                                                    <li class="menu-new"><a href="home-creative-minimalist-portfolio.html">creative minimalist portfolio</a></li>
+                                                    <li><a href="home-creative-small-business.html">Creative small business</a></li>
+                                                    <li><a href="home-creative-designer.html">Creative designer</a></li>
+                                                    <li><a href="home-creative-agency.html">Creative agency</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Portfolio Homepages</li>
+                                                    <li><a href="home-portfolio-minimal.html">Portfolio minimal</a></li>
+                                                    <li><a href="home-portfolio-multiple-carousel.html">Portfolio multiple carousel</a></li>
+                                                    <li><a href="home-portfolio-centered-slides.html">Portfolio centered slides</a></li>
+                                                    <li><a href="home-portfolio-personal.html">Portfolio personal</a></li>
+                                                    <li><a href="home-portfolio-metro.html">Portfolio metro</a></li>
+                                                    <li><a href="home-portfolio-full-screen-vertical.html">Portfolio full screen – vertical</a></li>
+                                                    <li><a href="home-portfolio-photographer.html">Portfolio photographer</a></li>
+                                                    <li><a href="home-portfolio-parallax.html">Portfolio parallax</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Blog Homepages</li>
+                                                    <li><a href="home-blog-grid.html">Blog grid</a></li>
+                                                    <li><a href="home-blog-masonry.html">Blog masonry</a></li>
+                                                    <li><a href="home-blog-clean.html">Blog clean</a></li>
+                                                    <li><a href="home-blog-personal.html">Blog personal</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                        </ul>
+                                        <!-- end sub menu -->
+                                    </div>
+                                </li>
+                                <!-- end menu item -->
+                                <li class="dropdown simple-dropdown"><a href="#">Pages</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <!-- start sub menu -->
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">About <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="about-us-simple.html">About us simple</a></li>
+                                                <li><a href="about-us-classic.html">About us classic</a></li>
+                                                <li><a href="about-us-modern.html">About us modern</a></li>
+                                                <li><a href="about-me.html">About me</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Services <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="services-simple.html">Services simple</a></li>
+                                                <li><a href="services-classic.html">Services classic</a></li>
+                                                <li><a href="services-modern.html">Services modern</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Contact <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="contact-us-simple.html">Contact simple</a></li>
+                                                <li><a href="contact-us-classic.html">Contact classic</a></li>
+                                                <li><a href="contact-us-classic-02.html">Contact classic – style 02</a></li>
+                                                <li><a href="contact-us-modern.html">Contact modern</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Team <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="team-simple.html">Team simple</a></li>
+                                                <li><a href="team-classic.html">Team classic</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Additional Pages <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="our-clients.html">Our clients</a></li>
+                                                <li><a href="404.html">Error 404</a></li>
+                                                <li><a href="coming-soon.html">Coming soon</a></li>
+                                                <li><a href="coming-soon-02.html">Coming soon – style 02</a></li>
+                                                <li><a href="faq.html">Faq</a></li>
+                                                <li><a href="maintenance.html">Maintenance</a></li>
+                                                <li><a href="search-result.html">Search result</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown megamenu-fw">
+                                    <a href="#">Portfolio</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <!-- start sub menu -->
+                                    <div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full">
+                                        <ul>
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Grid - Full width Layouts</li>
+                                                    <li><a href="portfolio-full-width-grid-overlay.html">Portfolio grid overlay</a></li>
+                                                    <li><a href="portfolio-full-width-grid-with-icon.html">Portfolio grid with icon</a></li>
+                                                    <li><a href="portfolio-full-width-grid-transform.html">Portfolio grid transform</a></li>
+                                                    <li><a href="portfolio-full-width-grid-zooming.html">Portfolio grid zooming</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="dropdown-header">Masonry - Full width Layouts</li>
+                                                    <li><a href="portfolio-full-width-masonry-overlay.html">Portfolio masonry overlay</a></li>
+                                                    <li><a href="portfolio-full-width-masonry-with-icon.html">Portfolio masonry with icon</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="dropdown-header">Metro - Full width Layouts</li>
+                                                    <li><a href="portfolio-full-width-metro-overlay.html">Portfolio metro overlay</a></li>
+                                                    <li><a href="portfolio-full-width-metro-with-icon.html">Portfolio metro with icon</a></li>
+                                                    <li><a href="portfolio-full-width-metro-transform.html">Portfolio metro transform</a></li>
+                                                    <li><a href="portfolio-full-width-metro-zooming.html">Portfolio metro zooming</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="dropdown-header">Other - Full width Layouts</li>
+                                                    <li><a href="portfolio-full-width-image-gallery.html">Portfolio image gallery</a></li>
+                                                    <li><a href="portfolio-full-width-justified-gallery.html">Portfolio justified</a></li>
+                                                    <li><a href="portfolio-full-width-carousel.html">Portfolio carousel</a></li>
+                                                    <li><a href="portfolio-full-width-parallax.html">Portfolio parallax</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column -->
+                                            <!-- start sub menu column -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Grid - Boxed Layouts</li>
+                                                    <li><a href="portfolio-boxed-grid-overlay.html">Portfolio grid overlay</a></li>
+                                                    <li><a href="portfolio-boxed-grid-with-icon.html">Portfolio grid with icon</a></li>
+                                                    <li><a href="portfolio-boxed-grid-transform.html">Portfolio grid transform</a></li>
+                                                    <li><a href="portfolio-boxed-grid-zooming.html">Portfolio grid zooming</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="dropdown-header">Masonry - Boxed Layouts</li>
+                                                    <li><a href="portfolio-boxed-masonry-overlay.html">Portfolio masonry overlay</a></li>
+                                                    <li><a href="portfolio-boxed-masonry-with-icon.html">Portfolio masonry with icon</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="dropdown-header">Metro - Boxed Layouts</li>
+                                                    <li><a href="portfolio-boxed-metro-overlay.html">Portfolio metro overlay</a></li>
+                                                    <li><a href="portfolio-boxed-metro-with-icon.html">Portfolio metro with icon</a></li>
+                                                    <li><a href="portfolio-boxed-metro-transform.html">Portfolio metro transform</a></li>
+                                                    <li><a href="portfolio-boxed-metro-zooming.html">Portfolio metro zooming</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="dropdown-header">Other - Boxed Layouts</li>
+                                                    <li><a href="portfolio-boxed-image-gallery.html">Portfolio image gallery</a></li>
+                                                    <li><a href="portfolio-boxed-justified-gallery.html">Portfolio justified</a></li>
+                                                    <li><a href="portfolio-boxed-carousel.html">Portfolio carousel</a></li>
+                                                    <li><a href="portfolio-boxed-parallax.html">Portfolio parallax</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
 
-<!-- end page title section -->
-<!-- start section -->
-<section class="wow animate__fadeIn last-paragraph-no-margin" style="margin-top:0rem;">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-6 col-md-8 col-sm-9 text-center margin-70px-bottom md-margin-40px-bottom sm-margin-30px-bottom">
-                <span class="alt-font text-deep-pink text-medium margin-5px-bottom d-block"> 디지털 환경에서의 사람들을 위한 연구소.</span>
-                <h6 class="font-weight-400 text-extra-dark-gray alt-font mb-0">우리는 "디지털케어네트워크연구소" 입니다</h6>
-            </div>
-        </div>
-        <div class="row margin-eight-bottom md-margin-30px-bottom">
-            <div class="col-12 col-md-8 sm-margin-15px-bottom wow animate__fadeInLeft" data-wow-delay="0.2s">
-                <img src="{% static 'image2/digitalcarenetwork06.jpg' %}" alt="" class="border-radius-6">
-            </div>
-            <div class="col-12 col-md-4 wow animate__fadeInRight" data-wow-delay="0.4s">
-                <img src="{% static 'image2/about_Portrate.jpg' %}" alt="" class="border-radius-6 sm-w-100">
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 align-items-center">
-            <div class="col sm-margin-15px-bottom">
-                <span class="text-extra-large text-extra-dark-gray alt-font w-90 lg-w-95 md-w-100 d-block">디지털 환경 속에서 살아가는 사람들을<br>생각하고 돌보고자 하는 마음으로 다가가는<br>디지털케어네트워크 연구소</span>
-            </div>
-            <style>
-              .text-extra-large {
-    font-size: 15px;
-    line-height: 24px;
-    padding-left:2rem;
-}
-</style>
-            <div class="col sm-margin-15px-bottom">
-                <strong class="font-weight-600 text-extra-dark-gray margin-5px-bottom d-block alt-font">연구소 비전</strong>
-                <p>디지털, 미디어, 기술에 대한 파르마콘적 사유를 통한 철학적 접근을 지향한다. 현대적, 서구적 기술과 비현대적 비서구적 사유에 대한 접점과 공명들을 심층적으로 탐색하면서, 한국 사회에 올바른 돌보기(Take-Care)와 다시 일으키기(Re-Start)작업을 추구한다.</p>
-            </div>
-            <div class="col">
-                <strong class="font-weight-600 text-extra-dark-gray margin-5px-bottom d-block alt-font">임무</strong>
-                <p>본 연구소의 추구상을 바탕으로, 오랫동안 우리의 삶에서 지배적이었던 디지털, 기술, 철학 담론과 비교되는 또 다른 사유의 다양함에 대하여 이야기 한다. 또한 이를 통한 새로운 시선, 사회 문화적 연대를 제안하며, 실천적 활동을 이행한다.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end section -->
-<!-- start section -->
-<section class="p-0  wow animate__fadeIn">
-<!-- <section class="p-0 bg-light-gray wow animate__fadeIn"> -->
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-5 order-1 order-lg-2 text-center text-lg-start offset-lg-1 md-padding-50px-all sm-padding-15px-lr">
-                <i class="fas fa-quote-left text-deep-pink icon-medium margin-15px-bottom"></i>
-                <h5 class="text-extra-dark-gray alt-font text-uppercase font-weight-700">이른바 4차 산업혁명의 시대에서<br>한국이 가진 고유한 기술의 사유와 실천들에 관한<br>현대적 의미는 무엇이 있을까?</h5>
-                <p class="w-90 md-w-100">저희 디지털케어네트워크연구소에 오신 것을 환영합니다!<br>디지털케어네트워크연구소는 세계화된 단일 문화(Texhnological Monoculture)에 대한 실증적 분석과 이를 통한 기술적 사유와 체계의 다양성이라는 잠재성에 대하여 역설적으로 밝히고자 합니다.<br>현재 21세기 사회는 매일이 새롭게 글로벌, 미디어화되고 있다고 해도 과언이 아닙니다. 이제 현대사회는 디지털, 미디어와 함께 살아가고 있다고 말할 수 있죠. 이러한 시기에 디지털 미디어라는 스마트한 공간과 문화를 어떻게 생산하고 사유하는가는 매우 중요한 의제가 되었습니다. 저희 연구소는 이러한 디지털 환경을 "어떻게 잘 돌볼 것인가(Taking Care)"하는 철학적이며 인문학적인 핵심 아젠다를 던져보려고 합니다. 그리고 저희 연구소가 던지는 아젠다는 미디어 환경이 우리사회에 잘 자리하도록 일조할 수 있을 것입니다.</p>
-                <img src="images/signature-dark.png" alt="" class="margin-15px-top">
-                <span class="text-extra-dark-gray text-large d-block margin-30px-top alt-font font-weight-600">박성우</span>
-                <span class="d-block">디지털케어네트워크 연구소장</span>
-            </div>
-            <div class="col-12 col-lg-6 order-2 order-lg-1 text-center align-self-end">
-                <img src="{% static 'images/Seongu-Park.jpg' %}" alt="">
-            </div>
-        </div>
-    </div>
-</section><br><br><br>
-<!-- end section -->
-{% comment %}
-<!-- start story section -->
-<section class="wow animate__fadeIn">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-5 col-md-6 text-center md-margin-30px-bottom wow animate__fadeInLeft">
-                <img src="{% static 'images/Seongu-Park.jpg' %}" alt="" class="border-radius-6">
-            </div>
-            <div class="col-12 col-lg-7 col-md-6 text-center text-md-start padding-eight-lr lg-padding-six-lr md-padding-15px-lr wow animate__fadeInRight" data-wow-delay="0.2s">
-                <span class="text-deep-pink alt-font margin-10px-bottom d-inline-block text-medium">연구소장 인사말</span>
-                <h6 class="alt-font text-extra-dark-gray">우리의 접근 방식</h6>
-                <p>디지털, 미디어, 기술에 대한 파르마콘적 사유를 통한 철학적 접근을 지향한다. 현대적, 서구적 기술과 비현대적 비서구적 사유에 대한 접점과 공명들을 심층적으로 탐색하면서, 한국 사회에 올바른 돌보기(Take-Care)와 다시 일으키기(Re-Start)작업을 추구한다.</p>
-                <a href="services-simple.html" class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top"><i class="fas fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> Our Services</a>
-            </div>
-        </div>
-        <div class="divider-full bg-extra-light-gray margin-seven-bottom margin-eight-top"></div>
-    </div>
-</section>
-<!-- end story section -->
-{% endcomment %}
-<!-- start section -->
-<!-- <section class="p-0 bg-light-gray wow animate__fadeIn">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-5 order-1 order-lg-2 text-center text-lg-start offset-lg-1 md-padding-50px-all sm-padding-15px-lr">
-                <i class="fas fa-quote-left text-deep-pink icon-medium margin-15px-bottom"></i>
-                <h5 class="text-extra-dark-gray alt-font text-uppercase font-weight-700">Design is not just what it looks like and feels like. Design is how it works.</h5>
-                <p class="w-90 md-w-100">Pofo philosophy that great design can only be delivered by people with a deep social and cultural understanding of the communities they designing. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...</p>
-                <img src="images/signature-dark.png" alt="" class="margin-15px-top">
-                <span class="text-extra-dark-gray text-large d-block margin-30px-top alt-font font-weight-600">Colin Smith</span>
-                <span class="d-block">From the chairman's desk</span>
-            </div>
-            <div class="col-12 col-lg-6 order-2 order-lg-1 text-center align-self-end">
-                <img src="{% static 'images/Seongu-Park.jpg' %}" alt="">
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- end section -->
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Single Project Page</li>
+                                                    <li><a href="single-project-page-01.html">Single project page 01</a></li>
+                                                    <li><a href="single-project-page-02.html">Single project page 02</a></li>
+                                                    <li><a href="single-project-page-03.html">Single project page 03</a></li>
+                                                    <li><a href="single-project-page-04.html">Single project page 04</a></li>
+                                                    <li><a href="single-project-page-05.html">Single project page 05</a></li>
+                                                    <li><a href="single-project-page-06.html">Single project page 06</a></li>
+                                                    <li><a href="single-project-page-07.html">Single project page 07</a></li>
+                                                    <li><a href="single-project-page-08.html">Single project page 08</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Portfolio Columns</li>
+                                                    <li><a href="portfolio-two-columns.html">Portfolio 2 columns</a></li>
+                                                    <li><a href="portfolio-three-columns.html">Portfolio 3 columns</a></li>
+                                                    <li><a href="portfolio-four-columns.html">Portfolio 4 columns</a></li>
+                                                    <li><a href="portfolio-five-columns.html">Portfolio 5 columns</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3 d-none d-lg-block">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li>
+                                                        <a href="home-creative-studio.html" class="menu-banner-image"><img src="images/menu-banner-01.png" alt="portfolio"/></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="home-creative-studio.html" class="menu-banner-image"><img src="images/menu-banner-02.png" alt="portfolio"/></a>
+                                                    </li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                        </ul>
+                                        <!-- end sub menu -->
+                                    </div>
+                                </li>
+                                <li class="dropdown simple-dropdown"><a href="#" title="Blog">Blog</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <!-- start sub menu -->
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog Standard <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-standard-full-width.html">Blog standard – full width</a></li>
+                                                <li><a href="blog-standard-with-left-sidebar.html">Blog standard with left sidebar</a></li>
+                                                <li><a href="blog-standard-with-right-sidebar.html">Blog standard with right sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog Classic <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-classic.html">Blog classic</a></li>
+                                                <li><a href="blog-classic-full-width.html">Blog classic – full width</a></li>
 
-<!-- start slider section  -->
-<section id="clients" class="parallax wow animate__fadeIn" data-parallax-background-ratio="0.4" style="background-image:url('{% static 'image2/digitalcarenetwork06.jpg' %}');">
-    <div class="opacity-medium bg-extra-dark-gray"></div>
-    <div class="container">
-        <div class="row">
-            <div class="swiper-container white-move" data-slider-options='{ "slidesPerView": "1", "allowTouchMove":true,"paginationClickable": true, "autoplay": { "delay": 3000, "disableOnInteraction": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "pagination": { "el": ".swiper-pagination", "clickable": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "pagination": { "el": ".swiper-pagination" } }'>
-                <!-- <div class="swiper-wrapper">
-                    <div class="swiper-slide text-center"><a href="http://envato.com"><img src="{% static 'images/clients-logo1.png' %}" alt=""></a></div>
-                    <div class="swiper-slide text-center"><a href="http://woocommerce.com"><img src="{% static 'images/clients-logo2.png' %}" alt=""></a></div>
-                    <div class="swiper-slide text-center"><a href="http://wordpress.com"><img src="{% static 'images/clients-logo3.png' %}" alt=""></a></div>
-                    <div class="swiper-slide text-center"><a href="http://magento.com"><img src="{% static 'images/clients-logo4.png' %}" alt=""></a></div>
-                    <div class="swiper-slide text-center"><a href="http://envato.com"><img src="{% static 'images/clients-logo1.png' %}" alt=""></a></div>
-                    <div class="swiper-slide text-center"><a href="http://woocommerce.com"><img src="{% static 'images/clients-logo2.png' %}" alt=""></a></div>
-                    <div class="swiper-slide text-center"><a href="http://wordpress.com"><img src="{% static 'images/clients-logo3.png' %}" alt=""></a></div>
-                    <div class="swiper-slide text-center"><a href="http://magento.com"><img src="{% static 'images/clients-logo4.png' %}" alt=""></a></div>
-                </div> -->
-                <!-- start swiper pagination -->
-                <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
-                <!-- end swiper pagination -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end slider section -->
-<!-- start testimonial section -->
-<section class="wow animate__fadeIn bg-light-gray testimonial-style3">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 md-margin-two-bottom wow animate__fadeIn last-paragraph-no-margin testimonial-style3">
-                        <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom lg-padding-nine-all md-padding-eight-all">
-                            I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.
-                        </div>
-                        <!-- start testimonials item -->
-                        <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                            <div class="image-box w-20"><img src="https://via.placeholder.com/149x149" class="rounded-circle" alt=""></div>
-                            <div class="name-box padding-20px-left">
-                                <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
-                                <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
-                            </div>
+                                            </ul></li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog List <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-list.html">Blog list</a></li>
+                                                <li><a href="blog-list-full-width.html">Blog list – full width</a></li>
+                                            </ul></li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog Grid <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-grid.html">Blog grid</a></li>
+                                                <li><a href="blog-grid-full-width.html">Blog grid – full width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog Masonry <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-masonry.html">Blog masonry</a></li>
+                                                <li><a href="blog-masonry-full-width.html">Blog masonry – full width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog Simple <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-simple.html">Blog simple</a></li>
+                                                <li><a href="blog-simple-full-width.html">Blog simple – full width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog Clean <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-clean.html">Blog clean</a></li>
+                                                <li><a href="blog-clean-full-width.html">Blog clean – full width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog Images <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-images.html">Blog images</a></li>
+                                                <li><a href="blog-images-full-width.html">Blog images – full width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog Only Text <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-only-text.html">Blog only text</a></li>
+                                                <li><a href="blog-only-text-full-width.html">Blog only text – full width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Post Layout <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-post-layout-01.html">Blog post layout 01</a></li>
+                                                <li><a href="blog-post-layout-02.html">Blog post layout 02</a></li>
+                                                <li><a href="blog-post-layout-03.html">Blog post layout 03</a></li>
+                                                <li><a href="blog-post-layout-04.html">Blog post layout 04</a></li>
+                                                <li><a href="blog-post-layout-05.html">Blog post layout 05</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Post Types <i class="fas fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="blog-standard-post.html">Standard post</a></li>
+                                                <li><a href="blog-gallery-post.html">Gallery post</a></li>
+                                                <li><a href="blog-slider-post.html">Slider post</a></li>
+                                                <li><a href="blog-html5-video-post.html">HTML5 video post</a></li>
+                                                <li><a href="blog-youtube-video-post.html">Youtube video post</a></li>
+                                                <li><a href="blog-vimeo-video-post.html">Vimeo video post</a></li>
+                                                <li><a href="blog-audio-post.html">Audio post</a></li>
+                                                <li><a href="blog-blockquote-post.html">Blockquote post</a></li>
+                                                <li><a href="blog-full-width-post.html">Full width post</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- end sub menu -->
+                                </li>
+                                <li class="dropdown megamenu-fw">
+                                    <a href="#">Elements</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <!-- start sub menu -->
+                                    <div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full icon-list-menu">
+                                        <ul>
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">General elements</li>
+                                                    <li><a href="accordions.html"><i class="ti-layout-accordion-separated"></i> Accordions</a></li>
+                                                    <li><a href="buttons.html"><i class="ti-mouse"></i> Buttons</a></li>
+                                                    <li><a href="team.html"><i class="ti-user"></i> Team</a></li>
+                                                    <li><a href="team-carousel.html"><i class="ti-layout-slider-alt"></i> Team carousel</a></li>
+                                                    <li><a href="clients.html"><i class="ti-id-badge"></i> Clients</a></li>
+                                                    <li><a href="client-carousel.html"><i class="ti-layout-slider"></i> Client carousel</a></li>
+                                                    <li><a href="subscribe.html"><i class="ti-bookmark"></i> Subscribe</a></li>
+                                                    <li><a href="call-to-action.html"><i class="ti-headphone-alt"></i> Call to action</a></li>
+                                                    <li><a href="tab.html"><i class="ti-layout-tab"></i> Tab</a></li>
+                                                    <li><a href="google-map.html"><i class="ti-location-pin"></i> Google map</a></li>
+                                                    <li><a href="text-slider.html"><i class="ti-layout-media-overlay"></i> Text slider</a></li>
+                                                    <li><a href="contact-form.html"><i class="ti-clipboard"></i> Contact form</a></li>
+                                                    <li><a href="image-gallery.html"><i class="ti-gallery"></i> Image gallery</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column -->
+                                            <!-- start sub menu column -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Infographics / icons</li>
+                                                    <li><a href="progress-bar.html"><i class="icon-hourglass"></i> Progress bar</a></li>
+                                                    <li><a href="icon-with-text.html"><i class="ti-layout-media-left"></i> Icon with text</a></li>
+                                                    <li><a href="overline-icon-box.html"><i class="ti-layout-placeholder"></i> Overline icon box</a></li>
+                                                    <li><a href="custom-icon-with-text.html"><i class="ti-layout-cta-btn-left"></i> Custom icon with text</a></li>
+                                                    <li><a href="counters.html"><i class="ti-timer"></i> Counters</a></li>
+                                                    <li><a href="countdown.html"><i class="ti-alarm-clock"></i> Countdown</a></li>
+                                                    <li><a href="pie-charts.html"><i class="ti-pie-chart"></i> Pie charts</a></li>
+                                                    <li><a href="text-box.html"><i class="ti-layout-cta-left"></i> Text box</a></li>
+                                                    <li><a href="fancy-text-box.html"><i class="ti-layout-cta-center"></i> Fancy text box</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Interactive Elements</li>
+                                                    <li><a href="testimonials.html"><i class="ti-thought"></i> Testimonials</a></li>
+                                                    <li><a href="testimonials-carousel.html"><i class="ti-comments"></i> Testimonials carousel</a></li>
+                                                    <li><a href="video.html"><i class="ti-video-camera"></i> Video</a></li>
+                                                    <li><a href="interactive-banners.html"><i class="ti-image"></i> Interactive banners</a></li>
+                                                    <li><a href="services.html"><i class="ti-headphone-alt"></i> Services</a></li>
+                                                    <li><a href="portfolio-slider.html"><i class="ti-layout-slider-alt"></i> Portfolio slider</a></li>
+                                                    <li><a href="info-banner.html"><i class="ti-layout-slider"></i> Info banner</a></li>
+                                                    <li><a href="rotate-box.html"><i class="ti-layout-width-full"></i> Rotate box</a></li>
+                                                    <li><a href="process-step.html"><i class="ti-stats-up"></i> Process step</a></li>
+                                                    <li><a href="blog-posts.html"><i class="ti-comment-alt"></i> Blog posts</a></li>
+                                                    <li><a href="instagram.html"><i class="ti-instagram"></i> Instagram</a></li>
+                                                    <li><a href="parallax-scrolling.html"><i class="ti-exchange-vertical"></i> Parallax scrolling</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Text & containers</li>
+                                                    <li><a href="heading.html"><i class="ti-text"></i> Heading</a></li>
+                                                    <li><a href="dropcaps.html"><i class="ti-layout-accordion-list"></i> Dropcaps</a></li>
+                                                    <li><a href="columns.html"><i class="ti-layout-column3-alt"></i> Columns</a></li>
+                                                    <li><a href="blockquote.html"><i class="ti-quote-left"></i> Blockquote</a></li>
+                                                    <li><a href="highlights.html"><i class="ti-underline"></i> Highlights</a></li>
+                                                    <li><a href="message-box.html"><i class="ti-layout-media-right-alt"></i> Message box</a></li>
+                                                    <li><a href="social-icons.html"><i class="ti-signal"></i> Social icons</a></li>
+                                                    <li><a href="lists.html"><i class="ti-list"></i> Lists</a></li>
+                                                    <li><a href="seperators.html"><i class="ti-layout-line-solid"></i> Separators</a></li>
+                                                    <li><a href="pricing-table.html"><i class="ti-layout-grid2-thumb"></i> Pricing table</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                        </ul>
+                                        <!-- end sub menu -->
+                                    </div>
+                                </li>
+                                <li class="dropdown megamenu-fw">
+                                    <a href="#">Features</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <!-- start sub menu -->
+                                    <div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full">
+                                        <ul>
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Header Styles</li>
+                                                    <li><a href="transparent-header.html">Transparent header</a></li>
+                                                    <li><a href="white-header.html">White header</a></li>
+                                                    <li><a href="dark-header.html">Dark header</a></li>
+                                                    <li><a href="header-with-top-bar.html">Header with top bar</a></li>
+                                                    <li><a href="header-with-sticky-top-bar.html">Header with sticky top bar</a></li>
+                                                    <li><a href="header-with-push.html">Header with push</a></li>
+                                                    <li><a href="center-navigation.html">Center navigation</a></li>
+                                                    <li><a href="center-logo.html">Center logo</a></li>
+                                                    <li><a href="top-logo.html">Top logo</a></li>
+                                                    <li><a href="one-page-navigation.html">One page navigation</a></li>
+                                                    <li><a href="hamburger-menu.html">Hamburger menu</a></li>
+                                                    <li><a href="hamburger-menu-modern.html">Hamburger menu modern</a></li>
+                                                    <li><a href="hamburger-menu-half.html">Hamburger menu half</a></li>
+                                                    <li><a href="left-menu-classic.html">Left menu classic</a></li>
+                                                    <li><a href="left-menu-modern.html">Left menu modern</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column -->
+                                            <!-- start sub menu column -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Footer</li>
+                                                    <li><a href="footer-standard.html">Footer standard</a></li>
+                                                    <li><a href="footer-standard-dark.html">Footer standard dark</a></li>
+                                                    <li><a href="footer-classic.html">Footer classic</a></li>
+                                                    <li><a href="footer-classic-dark.html">Footer classic dark</a></li>
+                                                    <li><a href="footer-clean.html">Footer clean</a></li>
+                                                    <li><a href="footer-clean-dark.html">Footer clean dark</a></li>
+                                                    <li><a href="footer-modern.html">Footer modern</a></li>
+                                                    <li><a href="footer-modern-dark.html">Footer modern dark</a></li>
+                                                    <li><a href="footer-center-logo.html">Footer center logo </a></li>
+                                                    <li><a href="footer-center-logo-dark.html">Footer center logo dark</a></li>
+                                                    <li><a href="footer-strip.html">Footer strip</a></li>
+                                                    <li><a href="footer-strip-dark.html">Footer strip dark</a></li>
+                                                    <li><a href="footer-center-logo-02.html">Footer center logo 02</a></li>
+                                                    <li><a href="footer-center-logo-02-dark.html">Footer center logo 02 dark</a></li>
+                                                    <li class="menu-new"><a href="footer-clean-modern.html">footer clean modern</a></li>
+                                                    <li class="menu-new"><a href="footer-clean-modern-dark.html">footer clean modern dark</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Page Title</li>
+                                                    <li><a href="page-title-left-alignment.html">Left alignment</a></li>
+                                                    <li><a href="page-title-right-alignment.html">Right alignment</a></li>
+                                                    <li><a href="page-title-center-alignment.html">Center alignment</a></li>
+                                                    <li><a href="page-title-dark-style.html">Dark style</a></li>
+                                                    <li><a href="page-title-big-typography.html">Big typography</a></li>
+                                                    <li><a href="page-title-parallax-image-background.html">Parallax image background</a></li>
+                                                    <li><a href="page-title-background-breadcrumbs.html">Image after breadcrumbs</a></li>
+                                                    <li><a href="page-title-gallery-background.html">Gallery background</a></li>
+                                                    <li><a href="page-title-background-video.html">Background video</a></li>
+                                                    <li><a href="page-title-mini-version.html">Mini version</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                            <!-- start sub menu column  -->
+                                            <li class="mega-menu-column col-12 col-lg-3">
+                                                <!-- start sub menu item  -->
+                                                <ul>
+                                                    <li class="dropdown-header">Gallery</li>
+                                                    <li><a href="single-image-lightbox.html">Single image lightbox</a></li>
+                                                    <li><a href="lightbox-gallery.html">Lightbox gallery</a></li>
+                                                    <li><a href="zoom-gallery.html">Zoom gallery</a></li>
+                                                    <li class="menu-new"><a href="metro-gallery.html">metro gallery</a></li>
+                                                    <li class="menu-new"><a href="justified-gallery.html">justified gallery</a></li>
+                                                    <li><a href="popup-with-form.html">Popup with form</a></li>
+                                                    <li><a href="modal-popup.html">Modal popup</a></li>
+                                                    <li><a href="open-youtube-video.html">Open youtube video</a></li>
+                                                    <li><a href="open-vimeo-video.html">Open vimeo video</a></li>
+                                                    <li><a href="open-google-map.html">Open google map</a></li>
+                                                </ul>
+                                                <!-- end sub menu item  -->
+                                            </li>
+                                            <!-- end sub menu column  -->
+                                        </ul>
+                                        <!-- end sub menu -->
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- end testimonials item -->
-                    <!-- start testimonials item -->
-                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 md-margin-two-bottom wow animate__fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.2s">
-                        <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom lg-padding-nine-all md-padding-eight-all">
-                            This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.
+                    <div class="col-auto pe-0">
+                        <div class="header-searchbar">
+                            <a href="#search-header" class="header-search-form"><i class="fas fa-search search-button"></i></a>
+                            <!-- search input-->
+                            <form id="search-header" method="post" action="search-result.html" name="search-header" class="mfp-hide search-form-result">
+                                <div class="search-form position-relative">
+                                    <button type="submit" class="fas fa-search close-search search-button"></button>
+                                    <input type="text" name="search" class="search-input" placeholder="Enter your keywords..." autocomplete="off">
+                                </div>
+                            </form>
                         </div>
-                        <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                            <div class="image-box w-20"><img src="https://via.placeholder.com/149x149" class="rounded-circle" alt=""></div>
-                            <div class="name-box padding-20px-left">
-                                <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
-                                <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end testimonials item -->
-                    <!-- start testimonials item -->
-                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 wow animate__fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.4s">
-                        <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom lg-padding-nine-all md-padding-eight-all">
-                            Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.
-                        </div>
-                        <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                            <div class="image-box w-20"><img src="https://via.placeholder.com/149x149" class="rounded-circle" alt=""></div>
-                            <div class="name-box padding-20px-left">
-                                <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
-                                <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
-                            </div>
+                        <div class="header-social-icon d-none d-md-inline-block">
+                            <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://dribbble.com/" title="Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a>                          
                         </div>
                     </div>
-                    <!-- end testimonials item -->
+                </div>
+            </nav>
+            <!-- end navigation --> 
+        </header>
+        <!-- end header -->
+        <!-- start about section -->
+        <section class="wow animate__fadeIn parallax" data-parallax-background-ratio="0.5" style="background-image:url('https://via.placeholder.com/1920x1100');">
+            <div class="container-fluid padding-five-lr">
+                <div class="row justify-content-end">                  
+                    <div class="col-12 col-xxl-5 col-xl-6 col-lg-7">
+                        <div class="padding-ten-all md-padding-70px-all sm-padding-25px-all bg-white box-shadow-light">
+                            <i class="fas fa-quote-left text-deep-pink icon-large margin-15px-bottom"></i>
+                            <h5 class="text-extra-dark-gray margin-50px-bottom md-margin-20px-bottom alt-font">Hello, I'm a UI/UX Designer & Frontend Developer from Victoria, Australia. I hold a master degree of Design from World University.</h5>
+                            <ul class="text-medium list-style-3">
+                                <li><span class="w-30 lg-w-35 md-w-30 xs-w-35 xs-padding-5px-right d-inline-block">Name:</span>Andrew Smith</li>
+                                <li><span class="w-30 lg-w-35 md-w-30 xs-w-35 xs-padding-5px-right d-inline-block">Email:</span><a href="mailto:andrew@gmail.com">andrew@gmail.com</a></li>
+                                <li><span class="w-30 lg-w-35 md-w-30 xs-w-35 xs-padding-5px-right d-inline-block">Phone:</span>+44 (0) 123 456 7890</li>
+                                <li><span class="w-30 lg-w-35 md-w-30 xs-w-35 xs-padding-5px-right d-inline-block">Date of birth:</span>23 February 1986</li>
+                                <li><span class="w-30 lg-w-35 md-w-30 xs-w-35 xs-padding-5px-right d-inline-block">Nationality:</span>United Kingdom</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- end testimonial section -->
-<!-- start team section -->
-<section class="wow animate__fadeIn">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-xl-7 col-lg-8 col-md-10 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <div class="alt-font text-medium-gray margin-5px-bottom text-uppercase text-small">건강한 디지털 세상을 이끌어가기 위해 활동하는 사람들</div>
-                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">소속 연구원</h5>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center">
-            <!-- start team item -->
-            <div class="col team-block text-start team-style-1 md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInRight">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/700x892" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">우송대학교 글로벌미디어영상학과 학과장<br>(Department of Media communication and Arts, Woosong University)<br>방송문화연구전공(Media Cultural Studies)</span>
-                                <div class="separator-line-horrizontal-full bg-deep-pink margin-eleven-tb"></div>
-                                <a href="http://www.facebook.com" target="_blank" class="text-white-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="http://www.instagram.com" target="_blank" class="text-white-2"><i class="fab fa-instagram"></i></a>
-                                <a href="mailto:licjpsw@gmail.com" target="_blank" class="text-white-2"><i class="fas fa-envelope"></i></a>
-                            </div>
+        </section>
+        <!-- end about section -->
+        <!-- start information section -->
+        <section class="wow animate__fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 wow animate__fadeIn">
+                        <div class="position-relative icon-with-paragraph">
+                            <span class="text-deep-pink position-absolute left-0 top-0 alt-font special-char-extra-large d-none d-lg-block">*</span>
+                            <h5 class="font-weight-300 text-extra-dark-gray w-90 padding-nineteen-left lg-padding-twenty-left lg-w-100 md-no-padding-left sm-margin-five-bottom">A digital studio crafting beautiful experiences. We create premium designs and technology.</h5>
                         </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
                     </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray text-uppercase">박성우 / Park Sungwoo</div>
-                            <div class="text-extra-small text-uppercase text-medium-gray">연구소장</div>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end team item -->
-            <!-- start team item -->
-            <div  class="col team-block text-start team-style-1  wow animate__fadeInRight" data-wow-delay="0.2s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="{% static 'images2/profile-jason.jpg' %}" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">연세대학교 커뮤니케이션대학원 미디어문화연구전공<br>(M.A. of Media Cultural Studies, Yonsei University Graduate School of Communication Arts)<br>관심분야: 학력차별, 공간과 미디어</span>
-                                <div class="separator-line-horrizontal-full bg-deep-pink margin-eleven-tb"></div>
-                                <a href="https://www.facebook.com/sunghyunbook/" target="_blank" class="text-white-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="http://www.twitter.com" target="_blank" class="text-white-2"><i class="fab fa-twitter"></i></a>
-                                <a href="mailto:parksunghyunw@yonsei.ac.kr" target="_blank" class="text-white-2"><i class="fas fa-envelope"></i></a>
-                                <a href="http://www.instagram.com" target="_blank" class="text-white-2"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
+                    <div class="col-12 col-xl-6 col-lg-5 offset-lg-1 offset-xl-0 col-md-6 wow animate__fadeIn last-paragraph-no-margin" data-wow-delay="0.2s">
+                        <p class="text-medium font-weight-300 w-70 line-height-26 lg-w-100">We are idea-driven, working with a strong focus on design and user experience. Our projects should engage your audience, we want to create wonderful digital things that people love to be part of and use. That's what your brand and audience deserve.</p>
+                        <a href="#expertise" class="inner-link text-uppercase alt-font margin-15px-top d-inline-block font-weight-600 text-deep-pink text-extra-small">Check My Expertise <i class="fas fa-long-arrow-alt-right margin-5px-left text-medium position-relative top-2" aria-hidden="true"></i></a>
                     </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray text-uppercase">박성현 / Park Sunghyun</div>
-                            <div class="text-extra-small text-uppercase text-medium-gray">연구원</div>
-                        </div>
-                    </figcaption>
-                </figure>
+                </div>
             </div>
-            <!-- end team item -->
-            <!-- start team item -->
-            <div class="col team-block text-start team-style-1 wow animate__fadeInRight" data-wow-delay="0.4s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/700x892" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                                <div class="separator-line-horrizontal-full bg-deep-pink margin-eleven-tb"></div>
-                                <a href="http://www.facebook.com" target="_blank" class="text-white-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="http://www.twitter.com" target="_blank" class="text-white-2"><i class="fab fa-twitter"></i></a>
-                                <a href="http://www.plus.google.com" target="_blank" class="text-white-2"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="http://www.instagram.com" target="_blank" class="text-white-2"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
+        </section>
+        <!-- end information section -->
+        <!-- start feature box section -->
+        <section class="wow animate__fadeIn p-0">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <!-- start feature box item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 banner-style2 md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp">
+                        <figure> 
+                            <div class="banner-image bg-black h-400px cover-background" style="background-image:url('https://via.placeholder.com/842x510');"></div>
+                            <figcaption class="padding-seven-all bg-white d-flex align-items-center last-paragraph-no-margin">
+                                <div class="text-center text-md-start">
+                                    <span class="text-medium-gray alt-font text-uppercase">1999 to 2001</span>
+                                    <span class="text-large font-weight-600 text-extra-dark-gray alt-font text-uppercase padding-15px-bottom d-block">Rubber Studio</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-dark-gray btn-small margin-30px-top sm-margin-15px-top">Visit Website</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                    <!-- end feature box -->
+                    <!-- start feature box item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 banner-style2 md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <figure> 
+                            <div class="banner-image bg-black h-400px cover-background" style="background-image:url('https://via.placeholder.com/842x510');"></div>
+                            <figcaption class="padding-seven-all bg-white d-flex align-items-center last-paragraph-no-margin">
+                                <div class="text-center text-md-start">
+                                    <span class="text-medium-gray alt-font text-uppercase">2001 to 2005</span>
+                                    <span class="text-large font-weight-600 text-extra-dark-gray alt-font text-uppercase padding-15px-bottom d-block">Motion Picture</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-dark-gray btn-small margin-30px-top sm-margin-15px-top">Visit Website</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                    <!-- end feature box -->
+                    <!-- start feature box item -->
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-8 banner-style2 wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <figure>
+                            <div class="banner-image bg-black h-400px cover-background" style="background-image:url('https://via.placeholder.com/842x510');"></div>
+                            <figcaption class="padding-seven-all bg-white d-flex align-items-center last-paragraph-no-margin">
+                                <div class="text-center text-md-start">
+                                    <span class="text-medium-gray alt-font text-uppercase">2005 to 2012</span>
+                                    <span class="text-large font-weight-600 text-extra-dark-gray alt-font text-uppercase padding-15px-bottom d-block">Black Design</span>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                    <a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-dark-gray btn-small margin-30px-top sm-margin-15px-top">Visit Website</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                    <!-- end feature box -->
+                </div>
+            </div>
+        </section>
+        <!-- end feature box section -->
+        <!-- start features box section -->
+        <section class="wow animate__fadeIn">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 col-md-10 text-center">
+                        <i class="fas fa-quote-left icon-small text-deep-pink d-block margin-25px-bottom"></i>
+                        <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-5px-bottom">Unity is strength...</h5>
+                        <h5 class="alt-font text-extra-dark-gray font-weight-300">When there is teamwork and collaboration, wonderful things can be achieved.</h5>
+                        <span class="text-uppercase text-extra-small alt-font letter-spacing-3 text-medium-gray">Mattie Stepanek</span>
                     </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray text-uppercase">스톰 / Schutte Storm </div>
-                            <div class="text-extra-small text-uppercase text-medium-gray">연구원</div>
-                        </div>
-                    </figcaption>
-                </figure>
+                </div>
             </div>
-            <!-- end team item -->
-            <!-- start team item -->
-            <div class="col team-block text-start team-style-1 wow animate__fadeInRight" data-wow-delay="0.4s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/700x892" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                                <div class="separator-line-horrizontal-full bg-deep-pink margin-eleven-tb"></div>
-                                <a href="http://www.facebook.com" target="_blank" class="text-white-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="http://www.twitter.com" target="_blank" class="text-white-2"><i class="fab fa-twitter"></i></a>
-                                <a href="http://www.plus.google.com" target="_blank" class="text-white-2"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="http://www.instagram.com" target="_blank" class="text-white-2"><i class="fab fa-instagram"></i></a>
+        </section>
+        <!-- end features box section -->
+        <!-- start information section -->
+        <section class="p-0 wow animate__fadeIn bg-light-gray">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col cover-background md-h-450px wow animate__fadeInLeft"  style="background-image:url('https://via.placeholder.com/1100x670');"></div>
+                    <div class="col wow animate__fadeInRight padding-five-tb padding-five-lr md-padding-nine-half-tb xs-padding-15px-lr xs-padding-50px-tb">
+                        <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-1 row-cols-md-2 row-cols-sm-2">
+                            <!-- start feature box item -->
+                            <div class="col margin-six-bottom md-margin-40px-bottom last-paragraph-no-margin text-center text-md-start">
+                                <div class="row">
+                                    <div class="col-12 col-lg-3 text-center">
+                                        <h3 class="text-light-gray font-weight-300 mb-0 letter-spacing-minus-2">01</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-9 margin-5px-top text-center text-lg-start">
+                                        <span class="alt-font text-extra-dark-gray font-weight-600 margin-one-bottom d-block">University of Design</span>
+                                        <span class="alt-font text-extra-small text-uppercase margin-10px-bottom d-block">Bachelor of arts 1990</span>
+                                        <p class="d-inline-block w-90 xl-w-95">Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray text-uppercase">노현진</div>
-                            <div class="text-extra-small text-uppercase text-medium-gray">연구원</div>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end team item -->
-
-
-        </div>
-    </div>
-</section>
-<!-- end team section -->
-<!-- start team section -->
-<section style="margin-top:-10rem;" class="wow animate__fadeIn">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-xl-7 col-lg-8 col-md-10 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center">
-                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">연구 위원</h5>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center">
-            <!-- start team item -->
-            <div class="col team-block text-start team-style-1 md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInRight">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/700x892" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                                <div class="separator-line-horrizontal-full bg-deep-pink margin-eleven-tb"></div>
-                                <a href="http://www.facebook.com" target="_blank" class="text-white-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="http://www.twitter.com" target="_blank" class="text-white-2"><i class="fab fa-twitter"></i></a>
-                                <a href="http://www.plus.google.com" target="_blank" class="text-white-2"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="http://www.instagram.com" target="_blank" class="text-white-2"><i class="fab fa-instagram"></i></a>
+                            <!-- end feature box item -->
+                            <!-- start feature box item -->
+                            <div class="col margin-six-bottom md-margin-40px-bottom last-paragraph-no-margin text-center text-md-start">
+                                <div class="row">
+                                    <div class="col-12 col-lg-3 text-center">
+                                        <h3 class="text-light-gray font-weight-300 mb-0 letter-spacing-minus-2">02</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-9 margin-5px-top text-center text-lg-start">
+                                        <span class="alt-font text-extra-dark-gray font-weight-600 margin-one-bottom d-block">Design University</span>
+                                        <span class="alt-font text-extra-small text-uppercase margin-10px-bottom d-block">Degree of Web Design 2003</span>
+                                        <p class="d-inline-block w-90 xl-w-95">Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray text-uppercase">조형준 / Cho Hyeongjun</div>
-                            <div class="text-extra-small text-uppercase text-medium-gray">새물결출판사 주간</div>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <!-- end team item -->
-            <!-- start team item -->
-            <div class="col team-block text-start team-style-1 md-margin-seven-bottom sm-margin-30px-bottom wow animate__fadeInRight" data-wow-delay="0.2s">
-                <figure>
-                    <div class="team-image sm-w-100">
-                        <img src="https://via.placeholder.com/700x892" alt="">
-                        <div class="overlay-content text-center d-flex align-items-end justify-content-center">
-                            <div class="icon-social-small padding-twelve-all">
-                                <span class="text-white-2 text-small d-inline-block m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text.</span>
-                                <div class="separator-line-horrizontal-full bg-deep-pink margin-eleven-tb"></div>
-                                <a href="http://www.facebook.com" target="_blank" class="text-white-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="http://www.twitter.com" target="_blank" class="text-white-2"><i class="fab fa-twitter"></i></a>
-                                <a href="http://www.plus.google.com" target="_blank" class="text-white-2"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="http://www.instagram.com" target="_blank" class="text-white-2"><i class="fab fa-instagram"></i></a>
+                            <!-- end feature box item -->
+                            <!-- start feature box item -->
+                            <div class="col md-margin-40px-bottom lg-margin-six-bottom last-paragraph-no-margin text-center text-md-start">
+                                <div class="row">
+                                    <div class="col-12 col-lg-3 text-center">
+                                        <h3 class="text-light-gray font-weight-300 mb-0 letter-spacing-minus-2">03</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-9 margin-5px-top text-center text-lg-start">
+                                        <span class="alt-font text-extra-dark-gray font-weight-600 margin-one-bottom d-block">Master of Branding</span>
+                                        <span class="alt-font text-extra-small text-uppercase margin-10px-bottom d-block">Master of branding 2006</span>
+                                        <p class="d-inline-block w-90 xl-w-95">Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- end feature box item -->
+                            <!-- start feature box item -->
+                            <div class="col last-paragraph-no-margin text-center text-md-start">
+                                <div class="row">
+                                    <div class="col-12 col-lg-3 text-center">
+                                        <h3 class="text-light-gray font-weight-300 mb-0 letter-spacing-minus-2">04</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-9 margin-5px-top text-center text-lg-start">
+                                        <span class="alt-font text-extra-dark-gray font-weight-600 margin-one-bottom d-block">UK Design Institute</span>
+                                        <span class="alt-font text-extra-small text-uppercase margin-10px-bottom d-block">Master of Graphics 2007</span>
+                                        <p class="d-inline-block w-90 xl-w-95">Lorem Ipsum is simply text the printing and typesetting standard industry.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end feature box item -->
                         </div>
-                        <div class="team-overlay bg-extra-dark-gray opacity8"></div>
-                    </div>
-                    <figcaption>
-                        <div class="team-member-position margin-20px-top text-center">
-                            <div class="text-small font-weight-500 text-extra-dark-gray text-uppercase">Yuk Hui / 허욱</div>
-                            <div class="text-extra-small text-uppercase text-medium-gray">철학자, 홍콩</div>
-                        </div>
-                    </figcaption>
-                </figure>
+                    </div> 
+                </div>
             </div>
-            <!-- end team item -->
-        </div>
-    </div>
-</section>
-<!-- end team section -->
-
-
-{% endblock %}
+        </section>    
+        <!-- end information section -->
+        <!-- start feature box section -->
+        <section class="wow animate__fadeIn">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
+                    <!-- start features box item -->
+                    <div class="col text-center last-paragraph-no-margin margin-70px-bottom md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp">                       
+                        <i class="icon-desktop icon-extra-medium text-deep-pink margin-20px-bottom"></i>
+                        <div class="text-extra-dark-gray margin-10px-bottom md-margin-5px-bottom alt-font font-weight-600">Web Development</div>
+                        <p class="w-80 mx-auto lg-w-85 sm-w-100 xs-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>                      
+                    </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col text-center last-paragraph-no-margin margin-70px-bottom md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp" data-wow-delay="0.2s">                       
+                        <i class="icon-tools icon-extra-medium text-deep-pink margin-20px-bottom"></i>
+                        <div class="text-extra-dark-gray margin-10px-bottom md-margin-5px-bottom alt-font font-weight-600">Logo & Identity</div>
+                        <p class="w-80 mx-auto lg-w-85 sm-w-100 xs-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>                      
+                    </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col text-center last-paragraph-no-margin margin-70px-bottom md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp" data-wow-delay="0.4s">                       
+                        <i class="icon-hotairballoon icon-extra-medium text-deep-pink margin-20px-bottom"></i>
+                        <div class="text-extra-dark-gray margin-10px-bottom md-margin-5px-bottom alt-font font-weight-600">Graphics Design</div>
+                        <p class="w-80 mx-auto lg-w-85 sm-w-100 xs-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>                      
+                    </div>                                        
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col text-center last-paragraph-no-margin md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeInUp">                       
+                        <i class="icon-target icon-extra-medium text-deep-pink margin-20px-bottom"></i>
+                        <div class="text-extra-dark-gray margin-10px-bottom md-margin-5px-bottom alt-font font-weight-600">App Development</div>
+                        <p class="w-80 mx-auto lg-w-85 sm-w-100 xs-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>                      
+                    </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col text-center last-paragraph-no-margin xs-margin-40px-bottom wow animate__fadeInUp" data-wow-delay="0.2s">                       
+                        <i class="icon-scissors icon-extra-medium text-deep-pink margin-20px-bottom"></i>
+                        <div class="text-extra-dark-gray margin-10px-bottom md-margin-5px-bottom alt-font font-weight-600">Social Marketing</div>
+                        <p class="w-80 mx-auto lg-w-85 sm-w-100 xs-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>                      
+                    </div> 
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col text-center last-paragraph-no-margin wow animate__fadeInUp" data-wow-delay="0.4s">                       
+                        <i class="icon-laptop icon-extra-medium text-deep-pink margin-20px-bottom"></i>
+                        <div class="text-extra-dark-gray margin-10px-bottom md-margin-5px-bottom alt-font font-weight-600">Content Creation</div>
+                        <p class="w-80 mx-auto lg-w-85 sm-w-100 xs-w-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>                      
+                    </div> 
+                    <!-- end features box item -->
+                </div>
+            </div>
+        </section>
+        <!-- end feature box section -->
+        <!-- start skills section -->
+        <section id="expertise" class="wow animate__fadeIn parallax" data-parallax-background-ratio="0.4" style="background-image:url('https://via.placeholder.com/1920x1100');">
+            <div class="opacity-full bg-black"></div>
+            <div class="container position-relative">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 justify-content-center">
+                    <!-- start pie chart item -->
+                    <div class="col text-center md-margin-30px-bottom wow animate__fadeInUp">
+                        <div class="chart-percent">
+                            <span class="pie-chart-style-03" data-line-width="3" data-percent="90" data-track-color="" data-bar-color="#ff214f">
+                                <span class="percent font-weight-500 text-medium"></span>
+                            </span>
+                        </div>
+                        <div class="chart-text">
+                            <span class="alt-font text-white-2 font-weight-600 margin-5px-bottom margin-20px-top d-block">Graphic Design</span>
+                            <p class="mx-auto w-90 text-medium-gray">Lorem Ipsum is simply text of the printing typesetting industry.</p>
+                        </div>
+                    </div>
+                    <!-- end pie chart item -->
+                    <!-- start pie chart item -->
+                    <div class="col text-center md-margin-30px-bottom wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="chart-percent">
+                            <span class="pie-chart-style-03" data-line-width="3" data-percent="96" data-track-color="" data-bar-color="#ff214f">
+                                <span class="percent font-weight-500 text-medium"></span>
+                            </span>
+                        </div>
+                        <div class="chart-text">
+                            <span class="alt-font text-white-2 font-weight-600 margin-5px-bottom margin-20px-top d-block">Web Design</span>
+                            <p class="mx-auto w-90 text-medium-gray">Lorem Ipsum is simply text of the printing typesetting industry.</p>
+                        </div>
+                    </div>
+                    <!-- end pie chart item -->
+                    <!-- start pie chart item -->
+                    <div class="col text-center xs-margin-30px-bottom wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="chart-percent">
+                            <span class="pie-chart-style-03" data-line-width="3" data-percent="95" data-track-color="" data-bar-color="#ff214f">
+                                <span class="percent font-weight-500 text-medium"></span>
+                            </span>
+                        </div>
+                        <div class="chart-text">
+                            <span class="alt-font text-white-2 font-weight-600 margin-5px-bottom margin-20px-top d-block">Photography</span>
+                            <p class="mx-auto w-90 text-medium-gray">Lorem Ipsum is simply text of the printing typesetting industry.</p>
+                        </div>
+                    </div>
+                    <!-- end pie chart item -->
+                    <!-- start pie chart item -->
+                    <div class="col text-center wow animate__fadeInUp" data-wow-delay="0.6s">
+                        <div class="chart-percent">
+                            <span class="pie-chart-style-03" data-line-width="3" data-percent="90" data-track-color="" data-bar-color="#ff214f">
+                                <span class="percent font-weight-500 text-medium"></span>                                    
+                            </span>
+                        </div>
+                        <div class="chart-text">
+                            <span class="alt-font text-white-2 font-weight-600 margin-5px-bottom margin-20px-top d-block">Branding</span>
+                            <p class="mx-auto w-90 text-medium-gray">Lorem Ipsum is simply text of the printing typesetting industry.</p>
+                        </div>
+                    </div>
+                    <!-- end pie chart item -->
+                </div>
+            </div>
+        </section> 
+        <!-- end skills section -->
+        <!-- start feature box section -->
+        <section class="p-0 wow animate__fadeIn">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 feature-box-14 border-top border-color-light-gray">
+                    <!-- start feature box item -->
+                    <div class="col text-center d-flex align-items-center last-paragraph-no-margin wow animate__fadeInRight p-0">
+                        <div class="padding-fifteen-all md-padding-50px-all sm-padding-30px-all w-100">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 mb-0">01</h2>
+                            <span class="d-block alt-font text-large text-extra-dark-gray margin-15px-top margin-10px-bottom sm-margin-5px-bottom">I am creative</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col text-center d-flex align-items-center last-paragraph-no-margin wow animate__fadeInRight p-0" data-wow-delay="0.2s">
+                        <div class="padding-fifteen-all md-padding-50px-all sm-padding-30px-all w-100">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 mb-0">02</h2>
+                            <span class="d-block alt-font text-large text-extra-dark-gray margin-15px-top margin-10px-bottom sm-margin-5px-bottom">I am naughty</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col text-center d-flex align-items-center last-paragraph-no-margin wow animate__fadeInRight p-0" data-wow-delay="0.4s">
+                        <div class="padding-fifteen-all md-padding-50px-all sm-padding-30px-all w-100">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 mb-0">03</h2>
+                            <span class="d-block alt-font text-large text-extra-dark-gray margin-15px-top margin-10px-bottom sm-margin-5px-bottom">I am business men</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col text-center d-flex align-items-center last-paragraph-no-margin wow animate__fadeInRight p-0" data-wow-delay="0.6s">
+                        <div class="padding-fifteen-all md-padding-50px-all sm-padding-30px-all w-100">
+                            <h2 class="text-light-gray alt-font letter-spacing-minus-3 mb-0">04</h2>
+                            <span class="d-block alt-font text-large text-extra-dark-gray margin-15px-top margin-10px-bottom sm-margin-5px-bottom">I am hungry</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.</p>
+                        </div>
+                    </div>
+                    <!-- start feature box item -->
+                </div>
+            </div>
+        </section>
+        <!-- end feature box section -->
+        <!-- start social section -->
+        <section class="big-section wow animate__fadeIn parallax" data-parallax-background-ratio="0.4" style="background-image:url('https://via.placeholder.com/1920x1100');">
+            <div class="opacity-full bg-medium-gray"></div>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span class="text-medium font-weight-600 text-uppercase d-block alt-font text-extra-dark-gray margin-30px-bottom">On social networks</span>
+                        <div class="social-icon-style-7">
+                            <ul class="margin-30px-top large-icon">
+                                <li><a class="facebook" href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i><span></span></a></li>
+                                <li><a class="twitter" href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i><span></span></a></li>
+                                <li><a class="google" href="http://google.com" target="_blank"><i class="fab fa-google-plus-g"></i><span></span></a></li>
+                                <li><a class="dribbble" href="http://dribbble.com" target="_blank"><i class="fab fa-dribbble"></i><span></span></a></li>
+                                <li><a class="linkedin" href="http://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i><span></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <!-- start social section -->
+        <!-- start footer --> 
+        <footer class="footer-strip-dark bg-extra-dark-gray padding-50px-tb sm-padding-30px-tb">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- start logo -->
+                    <div class="col-md-3 text-center text-md-start sm-margin-20px-bottom">
+                        <a href="index.html"><img class="footer-logo" src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo"></a>
+                    </div> 
+                    <!-- end logo -->
+                    <!-- start copyright -->
+                    <div class="col-md-6 text-center text-small alt-font sm-margin-10px-bottom">
+                        &copy; 2021 POFO is Proudly Powered by <a href="http://www.themezaa.com" target="_blank" title="ThemeZaa">ThemeZaa</a>.
+                    </div>
+                    <!-- end copyright -->
+                    <!-- start social media -->
+                    <div class="col-md-3 text-center text-md-end">
+                        <div class="social-icon-style-8 d-inline-block align-middle">
+                            <ul class="small-icon mb-0">
+                                <li><a class="facebook text-white" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a class="twitter text-white" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="google text-white" href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a class="instagram text-white" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram me-0" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end social media -->
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- javascript -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootsnav.js"></script>
+        <script type="text/javascript" src="js/jquery.nav.js"></script>
+        <script type="text/javascript" src="js/hamburger-menu.js"></script>
+        <script type="text/javascript" src="js/theme-vendors.min.js"></script>
+        <!-- setting -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
